@@ -1,0 +1,8 @@
+Origin: FESTIVAL
+Label: FESTIVAL
+Suite: stable
+Version: 1.0
+Codename: paris
+Architectures: iphoneos-arm
+Components: main
+Description: Cydia Repo for FESTIVAL Development
