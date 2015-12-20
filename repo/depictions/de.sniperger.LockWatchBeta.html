@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title>LockWatch Early Access | FESTIVAL</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/framework7.ios.min.css">
+		<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	</head>
+	<body>
+		<div class="views">
+			<div class="view view-main">
+				<div class="pages navbar-through">
+					<div data-page="index" class="page apps-home no-navbar no-toolbar">
+						<div class="page-content">
+							<div class="content-block">
+								<div class="content-block-inner">
+									<div class="header" style="width: 250px; margin: auto;">
+										<img src="img/de.sniperger.LockWatchBeta.png" style="width: 80px; height: 80px; border-radius: 15px; display: inline-block">
+										<div style="display: inline-block; margin-left: 10px; vertical-align: top">
+											<span style="font-size: 30px; font-weight: 500">LockWatch<br></span>
+											<span>Early Access<br></span>
+											<span>by Sniper_GER<br></span>
+										</div>
+									</div>
+									It's finally here.<br><br>
+									LockWatch Early Access allows you to have your very own Apple Watch right on your Lockscreen.<br>
+									It comes with 5 watch faces, but it can be extended by writing your own plugins! (A template will be available soon).<br><br>
+									The following watch faces are included:<br>
+									<ul>
+										<li>Simple</li>
+										<li>Color</li>
+										<li>Weather</li>
+										<li>Chronograph</li>
+										<li>X-Large</li>
+									</ul>
+									As of now, this is an <b>Early Access</b> build, which means there will be bugs. Current known issues include:<br>
+									<ul>
+										<li>A few graphical issues</li>
+										<li>Untranslated strings</li>
+										<li>No settings (except for customizing watch faces)</li>
+										<li>Selection menu doesn't close when unlocking the device</li>
+										<li>Lockscreen timeout is disabled (for debug purposes)</li>
+										<li>Weather watch face does not show any data (SpringBoard doesn't like Location Services)</li>
+										<li>A slight delay might occur when waking the device</li>
+									</ul>
+									If you experience any of these issues, don't report them to me. I am aware of them and I will fix them over time.
+								</div>
+							</div>
+							<div class="list-block">
+								<ul>
+									<li>
+										<a href="http://twitter.com/Sniper_GER" class="item-link item-content external">
+											<div class="item-media"><img src="img/twitter.png" style="width: 29px; height: 29px;"></div>
+											<div class="item-inner">
+												<div class="item-title">Sniper_GER on Twitter</div>
+												<div class="item-after">@Sniper_GER</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.reddit.com/r/jailbreak/comments/3u71ld/release_lockwatch_demo_what_lockwatch_will_look/" class="item-link item-content external">
+											<div class="item-media"><img src="img/reddit.png" style="width: 29px; height: 29px;"></div>
+											<div class="item-inner">
+												<div class="item-title">LockWatch on reddit</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/framework7.min.js"></script>
+		
+		<script>
+			var app = new Framework7({
+				popupCloseByOutside: false,
+				animateNavBackIcon: true,
+				sortable: false,
+				cache: false,
+				preloadPreviousPage: false,
+				modalTitle: "FESTIVAL Manager",
+				notificationCloseIcon: false,
+				notificationCloseOnClick: true,
+			});
+			var $$ = Dom7;
+			
+			var mainView = app.addView(".view-main", {
+				dynamicNavbar: true,
+			});
+		</script>
+	</body>
+</html>
